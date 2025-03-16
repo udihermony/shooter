@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Retrieve leaderboard data from localStorage
   const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
   
-  // Make sure all entries have the required properties with default values
+  // Make sure all entries have the required properties with default values    I like learning
   leaderboard.forEach(entry => {
       entry.score = entry.score || 0;
       entry.stage = entry.stage || 1;
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Set initial sort parameters
   let currentSort = 'score';
   let sortDirection = 'desc';
+
   
   // Function to display the leaderboard with current sorting
   function displayLeaderboard() {
