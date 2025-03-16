@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter Leaderboard</title>
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <h1>🏆 SPACE SHOOTER LEADERBOARD 🏆</h1>
+    
+    <div class="leaderboard">
+        <div class="sort-controls">
+            <p class="sort-info">Click on column headers to sort or use these buttons:</p>
+            <button class="sort-btn active" data-sort="score">Sort by Score</button>
+            <button class="sort-btn" data-sort="stage">Sort by Stage</button>
+            <button class="sort-btn" data-sort="enemiesKilled">Sort by Enemies</button>
+        </div>
+        
+        <table id="leaderboardTable">
+            <thead>
+                <tr>
+                    <th>RANK</th>
+                    <th data-sort="name">PLAYER</th>
+                    <th data-sort="score" class="sort-desc">SCORE</th>
+                    <th data-sort="stage">STAGE</th>
+                    <th data-sort="enemiesKilled">ENEMIES</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboardBody">
+                <!-- Leaderboard entries will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <a href="index.html" class="return-btn">PLAY AGAIN</a>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

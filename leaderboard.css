@@ -1,0 +1,122 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-image: url('assets/purple.png');
+  background-size: cover;
+}
+
+h1 {
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.leaderboard {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 50, 0.8);
+  border: 3px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+th {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: gold;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+th:hover {
+  background-color: rgba(255, 215, 0, 0.3);
+}
+
+th::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  opacity: 0.5;
+}
+
+th.sort-asc::after {
+  content: '▲';
+}
+
+th.sort-desc::after {
+  content: '▼';
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rank {
+  font-weight: bold;
+  color: gold;
+}
+
+.return-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: gold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.return-btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.top-player {
+  background-color: rgba(255, 215, 0, 0.15);
+}
+
+.sort-info {
+  color: #aaa;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.sort-controls {
+  margin-bottom: 15px;
+}
+
+.sort-btn {
+  background-color: rgba(255, 215, 0, 0.3);
+  color: white;
+  border: 1px solid gold;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sort-btn:hover, .sort-btn.active {
+  background-color: gold;
+  color: black;
+}

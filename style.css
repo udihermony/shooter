@@ -1,0 +1,12 @@
+/* Remove default margin and hide scrollbars for a full-screen game */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black; /* Background color, will be covered by our background image */
+  }
+  
+  /* Make sure the canvas takes up the full space */
+  canvas {
+    display: block;
+  }
+  
